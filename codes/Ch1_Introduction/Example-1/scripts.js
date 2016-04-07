@@ -1,16 +1,22 @@
 'use strict';
 
-document.addEventListener("DOMContentLoaded", function() {
+var containerTpl = document.querySelector('#container-template').innerHTML;
+var container = document.querySelector('#container');
 
-  var containerTpl = document.querySelector('#container-template').innerHTML;
-  var container = document.querySelector('#container');
+/**
+ * Data in the form for JavaScript object.
+ */
+var jsonData = {
+  'message': 'Hello World!',
+  'name': 'Ashwin Hegde'
+};
 
-  var jsonData = {
-    'message': 'Hello World!',
-    'name': 'Ashwin Hegde'
-  }
-  var template = Handlebars.compile(containerTpl);
+/**
+ * Compile innerHTML using compile method.
+ */
+var template = Handlebars.compile(containerTpl);
 
-  container.innerHTML = template(jsonData);
-
-});
+/**
+ * Passing object data to template.
+ */
+container.innerHTML = template(jsonData);
