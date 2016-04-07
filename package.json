@@ -1,0 +1,22 @@
+{
+  "name": "learning-handlebars",
+  "version": "0.0.0",
+  "description": "This training kit has been developed to learn the basics of Handlebars - a templating languages.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-by-practice/learning-handlebars.git"
+  },
+  "keywords": [
+    "Handlebars.js",
+    "templating"
+  ],
+  "author": "Ashwin Hegde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Code-by-practice/learning-handlebars/issues"
+  },
+  "homepage": "https://github.com/Code-by-practice/learning-handlebars#readme",
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  }
+}
