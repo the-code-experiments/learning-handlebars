@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ch2: Handlebars Path</title>
+  </head>
+  <body>
+
+    <div id="container"></div>
+
+    <!-- handlebars template -->
+    <script id="container-template" type="text/x-handlebars-template">
+      {{!-- Single line comment}}
+      {{!--
+        Multi line comment
+      --}}
+      <h1>Title: {{data.title}}</h1>
+      <h2>by: {{data.firstname}} {{data.lastname}}</h2>
+      <h3>Address: {{data.address.city}}, {{data.address.country}}</h3>
+    </script>
+
+    <script src="../../../node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
