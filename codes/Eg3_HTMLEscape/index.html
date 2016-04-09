@@ -10,8 +10,12 @@
 
     <!-- handlebars template -->
     <script id="container-template" type="text/x-handlebars-template">
+      {{!-- Data is getting rendered as HTML --}}
       {{{data.title}}}
       {{{data.name}}}
+
+      {{!-- Data is getting rendered as Text --}}
+      {{data.title}}
     </script>
 
     <script src="../../../node_modules/handlebars/dist/handlebars.min.js"></script>
