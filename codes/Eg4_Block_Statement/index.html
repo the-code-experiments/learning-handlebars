@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Eg3: HTML Escape</title>
+    <title>Eg4: Block statement</title>
   </head>
   <body>
 
@@ -10,12 +10,11 @@
 
     <!-- handlebars template -->
     <script id="container-template" type="text/x-handlebars-template">
-      {{!-- Data is getting rendered as HTML --}}
-      {{{data.title}}}
-      {{{data.name}}}
-
-      {{!-- Data is getting rendered as Text --}}
-      {{data.title}}
+      {{#if data.author}}
+        <h1>Author: {{data.author.firstname}} {{data.author.lastname}}</h1>
+      {{else}}
+        <h1>Author: Unknown</h1>
+      {{/if}}
     </script>
 
     <script src="../../../node_modules/handlebars/dist/handlebars.min.js"></script>

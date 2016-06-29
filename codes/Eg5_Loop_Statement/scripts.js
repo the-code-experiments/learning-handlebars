@@ -7,8 +7,22 @@ var container = document.querySelector('#container');
  * Data in the form for JavaScript object.
  */
 var jsonData = {
-  "title": "<h1>Learning Handlebars.js</h1>",
-  "name": "<h2>Ashwin Hegde</h2>"
+  "author": [{
+    "name": "Ashwin",
+    "department": "Engineer"
+  }, {
+    "name": "Kundan",
+    "department": "Manager"
+  }, {
+    "name": "Saju",
+    "department": "Sr. Engineer"
+  }, {
+    "name": "Ajay",
+    "department": "Sr. Engineer"
+  }, {
+    "name": "Jerin",
+    "department": "Engineer"
+  }]
 };
 
 /**
