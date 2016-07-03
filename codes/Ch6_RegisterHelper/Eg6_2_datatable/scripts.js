@@ -7,7 +7,7 @@ var container = document.querySelector('#container');
  * Data in the form for JavaScript object.
  */
 var jsonData = {
-  "author": [{
+  "employees": [{
     "name": "Ashwin",
     "department": "Engineering"
   }, {
@@ -24,6 +24,14 @@ var jsonData = {
     "department": "Engineering"
   }]
 };
+
+Handlebars.registerHelper('getDepartmentCode', function(department) {
+  if(department === 'Management') {
+    return 'M';
+  } else {
+    return 'E';
+  }
+});
 
 /**
  * Compile innerHTML using compile method.
