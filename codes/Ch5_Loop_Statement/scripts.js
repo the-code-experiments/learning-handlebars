@@ -9,19 +9,19 @@ var container = document.querySelector('#container');
 var jsonData = {
   "author": [{
     "name": "Ashwin",
-    "department": "Engineer"
+    "department": "Engineering"
   }, {
     "name": "Kundan",
-    "department": "Manager"
+    "department": "Management"
   }, {
     "name": "Saju",
-    "department": "Sr. Engineer"
+    "department": "Engineering"
   }, {
     "name": "Ajay",
-    "department": "Sr. Engineer"
+    "department": "Management"
   }, {
     "name": "Jerin",
-    "department": "Engineer"
+    "department": "Engineering"
   }]
 };
 
