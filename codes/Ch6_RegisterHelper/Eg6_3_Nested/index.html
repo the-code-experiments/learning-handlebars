@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eg6: Nested</title>
+  </head>
+  <body>
+
+    <div id="container"></div>
+
+    <!-- handlebars template -->
+    <script id="container-template" type="text/x-handlebars-template">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Skills</th>
+        </tr>
+        {{#each data.employees}}
+          <tr>
+            <td>{{name}}</td>
+            <td>{{getDepartmentCode department}}</td>
+            <td>
+              {{#each skills}}
+                {{.}}, 
+              {{/each}}
+            </td>
+          </tr>
+        {{/each}}
+      </table>
+    </script>
+
+    <script src="../../../node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
