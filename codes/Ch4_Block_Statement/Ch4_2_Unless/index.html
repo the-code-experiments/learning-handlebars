@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Eg4: Block statement</title>
+    <title>Eg4: Unless statement</title>
   </head>
   <body>
 
@@ -10,11 +10,9 @@
 
     <!-- handlebars template -->
     <script id="container-template" type="text/x-handlebars-template">
-      {{#if data.author}}
-        <h1>Author: {{data.author.firstname}} {{data.author.lastname}}</h1>
-      {{else}}
-        <h1>Author: Unknown</h1>
-      {{/if}}
+      {{#unless data.license}}
+        Author: <span>{{data.author.firstname}} {{data.author.lastname}}</span>
+      {{/unless}}
     </script>
 
     <script src="../../../node_modules/handlebars/dist/handlebars.min.js"></script>
